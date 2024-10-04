@@ -1,0 +1,60 @@
+/* Navbar container */
+nav {
+    background: linear-gradient(90deg, #b30222, #09368f); /* Gradient background */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: sticky; /* Navbar stays on top when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar list */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar items */
+li {
+    margin: 0 2rem;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif; /* Modern font choice */
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* Subtle background on link */
+}
+
+/* Hover effects */
+a:hover {
+    background: linear-gradient(90deg, #974857, #0b4ed3); /* Hover color change */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hover shadow effect */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li {
+        margin: 0.5rem 0;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+}

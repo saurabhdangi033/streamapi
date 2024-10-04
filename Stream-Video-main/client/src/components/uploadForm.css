@@ -1,0 +1,102 @@
+/* Main container */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 74vh;
+    background: rgb(2, 12, 51);
+    padding: 2rem;
+}
+
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #c16262;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading */
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Label styling */
+label {
+    font-size: 1.1rem;
+    color: #1e0202;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Input fields */
+input[type="text"], input[type="file"] {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus, input[type="file"]:focus {
+    border-color: #4b6cb7;
+    box-shadow: 0 0 5px rgba(75, 108, 183, 0.4);
+}
+
+/* Submit button */
+button {
+    padding: 0.75rem;
+    background-color: rgb(223, 20, 84);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #600707;
+}
+
+/* Message styling */
+.message {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #2ecc71; /* Default success color */
+}
+
+/* Error message color */
+.message:contains('failed') {
+    color: #e74c3c;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+    }
+}
