@@ -23,7 +23,7 @@ const UploadForm = () => {
         formData.append('video', videoFile);
 
         try {
-            const res = await axios.post('http://localhost:5000/upload', formData, {
+            const res = await axios.post('https://streamapi-lake.vercel.app/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             setMessage(res.data.message);

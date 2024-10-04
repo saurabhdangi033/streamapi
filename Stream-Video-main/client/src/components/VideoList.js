@@ -12,7 +12,7 @@ const VideoList = () => {
 
     const fetchVideos = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/videos');
+            const res = await axios.get('https://streamapi-lake.vercel.app/videos');
             setVideos(res.data);
         } catch (error) {
             console.error('Failed to fetch videos:', error);
@@ -20,7 +20,7 @@ const VideoList = () => {
     };
     const handleDelete = async (id) => {
       try {
-          const res = await axios.delete(`http://localhost:5000/videos/${id}`);
+          const res = await axios.delete(`https://streamapi-lake.vercel.app/videos/${id}`);
           setMessage(res.data.message); // Display success/failure message
   
           // If video is successfully deleted, update the list
